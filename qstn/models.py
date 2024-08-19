@@ -33,8 +33,14 @@ class Student(AbstractBaseUser):
 
     objects = StudentManager()
 
-    USERNAME_FIELD = 'login'  # Используем email в качестве уникального идентификатора
+    USERNAME_FIELD = 'login'  # Используем login в качестве уникального идентификатора
     REQUIRED_FIELDS = ['email', 'first_name', 'last_name', 'birth', 'educational_institution']
+
+    def has_perm(self, perm, obj=None):
+        return self.is_superuser
+
+    def has_module_perms(self, app_label):
+        return self.is_superuser
 
     def __str__(self):
         return f"{self.first_name} {self.last_name} ({self.email})"
