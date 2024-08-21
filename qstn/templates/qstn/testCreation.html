@@ -1,0 +1,32 @@
+{% extends 'qstn/base.html' %}
+{% load static %}
+
+{% block title %}Test creation{% endblock %}
+
+{% block imports %}
+    <script src="{% static 'qstn/js/testCreation.js' %}"></script>
+    <link href="{% static 'qstn/css/testCreation.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+	<div class="container glass-pane">
+        <h1>Создание теста</h1>
+        <label for="test-title">Название теста:</label>
+        <input type="text" id="test-title" placeholder="Введите название теста" required>
+
+        <div>
+            <label for="test-type">Тип доступа:</label>
+            <select id="test-type">
+                <option value="public">Публичный</option>
+                <option value="private">Доступ по ссылке</option>
+            </select>
+        </div>
+
+        <div id="questions-container">
+            <h2>Вопросы</h2>
+            <button class="button" onclick="addQuestion()">+</button>
+        </div>
+
+        <button class="button" id="submit-test">Создать тест</button>
+    </div>
+{% endblock %}
