@@ -9,7 +9,7 @@ from qstn.forms import *
 
 @login_required(login_url='/login/')
 def index(request):
-    return render(request, 'qstn/index.html')
+    return render(request, 'qstn/home.html')
 
 
 def login(request):
@@ -49,3 +49,9 @@ def registration(request):
         form = RegistrationForm()
 
     return render(request, 'registration/registration.html', {'registration_form': form})
+
+
+@login_required(login_url='/login/')
+def test_creation(request):
+    return render(request, 'qstn/testCreation.html')
+
