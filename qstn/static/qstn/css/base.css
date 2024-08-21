@@ -1,0 +1,50 @@
+* {
+        font-family: Arial, sans-serif;
+        color: white;
+}
+
+body {
+    background-image: url("https://github.com/Vanek1ch/py-qstn/blob/web/main_workflow/Asker/qstn/static/images/bg.jpg?raw=true");
+    background-size: cover;
+    background-color: #1f2229;
+}
+
+.glass-pane {
+    background-color: #f9f9f908;
+    backdrop-filter: blur(5px);
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 67%);
+}
+
+.a-button {
+    max-width: 30%;
+    width: fit-content;
+    padding: 10px;
+    background-color: #067aff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+.a-button:active,.a-button:visited {
+    color: white;
+}
+
+a {
+    color: #337ce1;
+}
+
+a:active {
+    color: #4CAF50;
+}
+
+a:visited {
+    color: #733cff;
+}
