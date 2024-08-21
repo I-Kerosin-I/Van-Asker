@@ -1,7 +1,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url("https://github.com/Vanek1ch/py-qstn/blob/web/main_workflow/Asker/qstn/static/images/bg.jpg?raw=true");
+    background-size: cover;
+    background-color: #1f2229;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +11,13 @@ body {
     margin: 0;
 }
 
+
+
 .container {
-    background-color: #fff;
+    color: #dedede;
+    max-width: 600px;
+    margin: auto;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
 }
 
@@ -36,10 +40,6 @@ input {
     font-size: 14px;
 }
 
-/*.a-button {*/
-/*    */
-/*}*/
-
 button, .a-button {
     width: 100%;
     padding: 10px;
@@ -53,22 +53,11 @@ button, .a-button {
     text-decoration: none;
     text-align: center;
     box-sizing: border-box;
+    margin-top: 15px;
 }
+
+
 
 button:hover {
     background-color: #45a049;
-}
-
-.back-button {
-    background-color: #f44336;
-    margin-top: 10px;
-}
-
-.back-button:hover {
-    background-color: #e53935;
-}
-
-#signup {
-    width: 100%;
-    text-align: center;
 }
